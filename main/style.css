@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* 初めにHTMLの存在を教えるために、HTMLにLINKをしてあげる  */
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    color: #432
+}
+
+.page-header {
+
+    display: flex;
+    max-width: 1100px;
+    margin: 0;
+    padding: 0 2%;
+}
+
+
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+.main-nav li {
+    margin: 30px 15px;
+}
