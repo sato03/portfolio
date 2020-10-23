@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-/* 初めにHTMLの存在を教えるために、HTMLにLINKをしてあげる  */
-
+/* h1 font設定 */
 h1 {
     font-family: 'Philosopher', sans-serif;
 }
 
+/* html のフォントサイズを100％ ?何に対して?　*/
 html {
     font-size: 100%;
 }
@@ -15,8 +15,9 @@ body {
     color: #432
 }
 
-.page-header {
+/* header　横並び、一番大きくて1100pxまで、余白は画面の左に２％　*/
 
+.page-header {
     display: flex;
     max-width: 1100px;
     margin: 0;
