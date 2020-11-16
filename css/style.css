@@ -1,37 +1,134 @@
 @charset "UTF-8";
 
-/* h1 font設定 */
-h1 {
-    font-family: 'Philosopher', sans-serif;
-}
-
-/* html のフォントサイズを100％ ?何に対して?　*/
-html {
-    font-size: 100%;
-}
+/* * {
+    outline: red 1px solid;
+} */
 
 body {
     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-    color: #432
 }
 
-/* header　横並び、一番大きくて1100pxまで、余白は画面の左に２％　*/
-
-.page-header {
+.wrapper {
     display: flex;
-    max-width: 1100px;
-    margin: 0;
-    padding: 0 2%;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+.contents {
+    flex-grow: 1;
+}
 
+.brand {
+    font-family: 'Overlock', cursive;
+    font-size: 48px;
+}
 
-.main-nav {
+.brand a {
+    text-decoration: none;
+    color: black;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: block;
+    line-height: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
     display: flex;
-    font-size: 1.25rem;
+    justify-content: space-between;
+    max-width: 1640px;
+    margin: 0 auto;
+    height: 100px;
+    width: 100%;
+}
+
+.navigation ul {
+    display: flex;
     list-style: none;
 }
 
-.main-nav li {
-    margin: 30px 15px;
+.navigation li {
+    margin-left: 15px;
+}
+
+.navigation a {
+    font-size: 24px;
+    color: black;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.home-menu img {
+    height: auto;
+    width: 100%;
+}
+
+.home-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.home-menu a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.home-menu {
+    max-width: 1640px;
+    margin: auto;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.home-menu li {
+    flex-grow: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.home-menu span {
+    font-size: 24px;
+    color: black;
+    margin: auto;
+}
+
+.footer {
+    background-color:lightgray;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-container {
+    max-width: 1640px;
+    margin: auto;
+}
+
+.footer-container ul {
+    display: flex;
+}
+
+.footer-container li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+.footer-container i {
+    font-size: 32px;
+    color: black;
+}
+
+.footer-container p {
+    margin-left: 16px;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
